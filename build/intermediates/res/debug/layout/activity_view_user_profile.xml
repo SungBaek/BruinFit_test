@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/view_user_profile"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:stretchColumns="1">
+<TextView
+    android:layout_height="120dp"/>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+    <TextView
+        android:layout_column="1"
+        android:text="Name"
+        android:textSize="20dp"
+        android:padding="3dip" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:gravity="right"
+        android:padding="3dip"
+        android:textSize="20dp"/>
+</TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+<TableRow>
+    <TextView
+        android:layout_column="1"
+        android:text="Age"
+        android:textSize="20dp"
+        android:padding="3dip" />
+    <TextView
+        android:id="@+id/user_age"
+        android:gravity="right"
+        android:padding="3dip"
+        android:textSize="20dp"/>
+</TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+<TableRow>
+    <TextView
+        android:layout_column="1"
+        android:text="Gender"
+        android:textSize="20dp"
+        android:padding="3dip" />
+    <TextView
+        android:id="@+id/user_gender"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:padding="3dip" />
+</TableRow>
+
+<View
+    android:layout_height="2dip"
+    android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Weight"
+            android:textSize="20dp"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/user_weight"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Height"
+            android:textSize="20dp"
+            android:padding="3dip" />
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/user_height"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="CalorieGoal"
+            android:textSize="20dp"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/user_calorie"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Eaten Daily Calorie"
+            android:textSize="20dp"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/user_eatenCalorie"
+            android:gravity="right"
+            android:padding="3dip"
+            android:textSize="20dp"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Fat Goal"
+            android:textSize="20dp"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/user_fatgoal"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Eaten Daily Fat"
+            android:textSize="20dp"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/user_eatenFat"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="start new day"
+        android:onClick="startNewDay"/>
+</TableLayout><!-- From: file:/C:/Users/joon8_000/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_view_user_profile.xml -->

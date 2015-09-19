@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.joon8_000.myapplication.user.UserProfileCreationActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"></include>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView android:text="Create User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender :"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female"/>
+        </RadioGroup>
+    </LinearLayout>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_marginLeft="@dimen/left_indent"
+            android:id="@+id/age"
+            android:singleLine="true"
+            android:hint="Age"/>
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_marginLeft="@dimen/left_indent"
+        android:singleLine="true"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_marginLeft="@dimen/left_indent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Last Name"/>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_marginLeft="@dimen/left_indent"
+        android:singleLine="true"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:hint="Weight (lb)"/>
+    <EditText
+        android:id="@+id/height"
+        android:layout_marginLeft="@dimen/left_indent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Height (in)"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight Goal: "/>
+        <RadioButton
+            android:id="@+id/lose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lose"/>
+        <RadioButton
+            android:id="@+id/stay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stay"/>
+        <RadioButton
+            android:id="@+id/gain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gain"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/submit_user_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="createUser"/>
+    </LinearLayout>
+</LinearLayout>

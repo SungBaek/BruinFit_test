@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Bruin Fit</string>
+    <string name="edit_message">Enter a Message!</string>
+    <string name="button_send">Send</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_display_message">My Message</string>
+
+    <string name="logo_intro">Bruin Fit</string>
+    <string name="action_search">Search</string>
+    <string name="introduction">Welcome to BFit!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="some_day">Some day!</string>
+    <string name="title_activity_user_profile_creation">Create Profile</string>
+    <string name="title_activity_user_profile_creation_echo">UserProfileCreationEchoActivity
+    </string>
+    <string name="title_activity_home_page">BruinFit</string>
+    <string name="title_activity_choose_dining_hall">Dining Halls</string>
+    <string name="title_activity_pick_food_type">Food Selection</string>
+    <string name="title_activity_food_test">FoodTestActivity</string>
+    <string name="load_user_profile">Load Existing Profile</string>
+
+    <string name="user_name">%1$s %1$s</string>
+    <string name="title_activity_view_user_profile">ViewUserProfile</string>
+    <string name="populate">Populate</string>
+    <string name="de_neve">De Neve</string>
+    <string name="b_plate">B-Plate</string>
+    <string name="feast">Feast</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="test">\"Test\'\" Kitchen</string>
+</resources>

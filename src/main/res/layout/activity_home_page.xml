@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.joon8_000.myapplication.user.HomePageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView android:text="@string/introduction" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="View Meals"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="viewMeals"
+            android:background="@color/bright_foreground_material_dark"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Get Meals"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="openMeals"
+            android:background="@color/bright_foreground_material_dark"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="View Profile"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="viewUserProfile"
+            android:background="@color/bright_foreground_material_dark"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Create Profile"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="createUserProfile"
+            android:background="@color/bright_foreground_material_dark"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

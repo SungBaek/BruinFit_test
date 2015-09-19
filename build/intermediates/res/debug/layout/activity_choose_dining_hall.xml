@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.joon8_000.myapplication.user.HomePageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"></include>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:text="Where Are We Eating?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="breakfast"
+            android:id="@+id/breakfastCheck"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="lunch"
+            android:id="@+id/lunchCheck"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="dinner"
+            android:id="@+id/dinnerCheck"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/de_neve"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:onClick="openDeNeve"
+                android:background="@color/bright_foreground_material_dark"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Covel"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:onClick="openCovel"
+                android:background="@color/bright_foreground_material_dark"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/feast"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:onClick="openFeast"
+                android:background="@color/bright_foreground_material_dark"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/b_plate"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:onClick="openSproul"
+                android:background="@color/bright_foreground_material_dark"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Hedrick"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:onClick="openHedrick"
+                android:background="@color/bright_foreground_material_dark"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:background="@color/bright_foreground_material_dark"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/joon8_000/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_choose_dining_hall.xml -->

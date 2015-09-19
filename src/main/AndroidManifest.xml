@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joon8_000.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".BruinFit"
+        android:allowBackup="true"
+        android:icon="@mipmap/fun_fit"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".user.UserProfileCreationActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".user.HomePageActivity" >
+        </activity>
+        <activity
+            android:name=".user.UserProfileCreationEchoActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".user.UserProfileCreationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joon8_000.myapplication.user.UserProfileCreationActivity" />
+        </activity>
+        <activity
+            android:name=".user.HomePageActivity"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".meallist.ChooseDiningHallActivity"
+            android:label="@string/title_activity_choose_dining_hall"
+            android:parentActivityName=".user.HomePageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joon8_000.myapplication.user.HomePageActivity" />
+        </activity>
+        <activity
+            android:name=".meallist.PickFoodTypeActivity"
+            android:label="@string/title_activity_pick_food_type" >
+        </activity>
+        <activity
+            android:name=".meallist.FoodTestActivity"
+            android:label="@string/title_activity_food_test"
+            android:parentActivityName=".meallist.ChooseDiningHallActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joon8_000.myapplication.meallist.ChooseDiningHallActivity" />
+        </activity>
+        <activity
+            android:name=".user.ViewUserProfile"
+            android:label="@string/title_activity_view_user_profile" >
+        </activity>
+    </application>
+
+</manifest>

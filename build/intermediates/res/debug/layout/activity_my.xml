@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aaa">
+    <EditText android:id="@+id/edit_message"
+
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:hint="@string/edit_message" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:onClick="sendMessage" />
+
+    </LinearLayout>
+    <EditText android:id="@+id/test_message"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:layout_width="fill_parent"
+        android:hint="@string/some_day"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Where does this go?"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        />
+
+</LinearLayout><!-- From: file:/C:/Users/joon8_000/AndroidStudioProjects/MyApplication4/app/src/main/res/layout/activity_my.xml -->
