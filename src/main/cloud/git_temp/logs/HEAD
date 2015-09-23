@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 603204c7e6698bca89bd30d2b45aa0d120dbc303 SungBaek <joon812@gmail.com> 1439023810 -0700	commit (initial): intial commit
+603204c7e6698bca89bd30d2b45aa0d120dbc303 b1b488190e93471a6b74a5981b56d90f01b99524 SungBaek <joon812@gmail.com> 1439267094 -0700	commit: nutrition initialized
+b1b488190e93471a6b74a5981b56d90f01b99524 82e4992457e0c54fdd1e8000035f39ba1c6815d1 SungBaek <joon812@gmail.com> 1439267138 -0700	commit: nutrition initialization
+82e4992457e0c54fdd1e8000035f39ba1c6815d1 46428c6e6870340c5600abd1f24ae2b8075e29fa SungBaek <joon812@gmail.com> 1439267174 -0700	pull: Merge made by the 'recursive' strategy.
+46428c6e6870340c5600abd1f24ae2b8075e29fa 875bc0cb95c1098dd55f6427064917df01449662 SungBaek <joon812@gmail.com> 1439268594 -0700	pull: Fast-forward
+875bc0cb95c1098dd55f6427064917df01449662 8003516e8e8c0dbbdbf12b312fa4ac25336238cf SungBaek <joon812@gmail.com> 1439269224 -0700	commit: fjdosppjosdf
+8003516e8e8c0dbbdbf12b312fa4ac25336238cf fb4068961e1b36b1cb49e79892e41a18c2de2865 SungBaek <joon812@gmail.com> 1439269683 -0700	pull: Fast-forward
+fb4068961e1b36b1cb49e79892e41a18c2de2865 4c4ad3aa2ae7db67995522878de99513d85f4055 SungBaek <joon812@gmail.com> 1439531731 -0700	pull: Fast-forward
+4c4ad3aa2ae7db67995522878de99513d85f4055 fcf95d8d195091fcbb6f84d675444c89e926313d SungBaek <joon812@gmail.com> 1439626542 -0700	commit: Added new function
+fcf95d8d195091fcbb6f84d675444c89e926313d 3b31f425e860bdf64fc012d57614fdc0fe6b021b SungBaek <joon812@gmail.com> 1439707524 -0700	commit: Function "getNutrients" added
+3b31f425e860bdf64fc012d57614fdc0fe6b021b a1e08caeab4b408ff91673e2da05a950ab7d9f53 SungBaek <joon812@gmail.com> 1440224256 -0700	commit: parsing completed for deneve
+a1e08caeab4b408ff91673e2da05a950ab7d9f53 018a208664aba68bf5573fc28d4c02bf4edc904c SungBaek <joon812@gmail.com> 1440449991 -0700	commit: flushNutrients added, getDiningHall+

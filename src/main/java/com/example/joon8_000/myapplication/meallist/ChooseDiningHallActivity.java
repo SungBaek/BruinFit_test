@@ -67,7 +67,7 @@ public class ChooseDiningHallActivity extends ActionBarActivity {
         ((BruinFit) getApplication()).getMeal().pullDatabase("hedrick",getCheckedTime());
         Intent intent = new Intent(this, PickFoodTypeActivity.class);
         if (((BruinFit) getApplication()).getMeal().getMeals().size() == 0) //it's empty
-            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT);
+            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT).show();
         else {
             startActivity(intent);
         }
@@ -76,17 +76,16 @@ public class ChooseDiningHallActivity extends ActionBarActivity {
         ((BruinFit) getApplication()).getMeal().pullDatabase("feast",getCheckedTime());
         Intent intent = new Intent(this, PickFoodTypeActivity.class);
         if (((BruinFit) getApplication()).getMeal().getMeals().size() == 0) //it's empty
-            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT);
+            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT).show();
         else {
             startActivity(intent);
         }
     }
     public void openDeNeve(View view){
-
         ((BruinFit) getApplication()).getMeal().pullDatabase("deneve",getCheckedTime());
         Intent intent = new Intent(this, PickFoodTypeActivity.class);
         if (((BruinFit) getApplication()).getMeal().getMeals().size() == 0) //it's empty
-            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT);
+            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT).show();
         else {
             startActivity(intent);
         }
@@ -96,7 +95,7 @@ public class ChooseDiningHallActivity extends ActionBarActivity {
         ((BruinFit) getApplication()).getMeal().pullDatabase("covel",getCheckedTime());
         Intent intent = new Intent(this, PickFoodTypeActivity.class);
         if (((BruinFit) getApplication()).getMeal().getMeals().size() == 0) //it's empty
-            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT);
+            Toast.makeText(getBaseContext(),"Nothing you can eat here", Toast.LENGTH_SHORT).show();
         else {
             startActivity(intent);
         }

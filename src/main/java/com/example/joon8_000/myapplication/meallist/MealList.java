@@ -99,8 +99,11 @@ public class MealList {
             public int compare(Meal lhs, Meal rhs) {
                 if (lhs.getCalorie() > rhs.getCalorie())
                     return -1;
-                else
+                else if(lhs.getCalorie() < rhs.getCalorie())
                     return 1;
+                else
+                    return 0;
+
             }
         });
         //for test

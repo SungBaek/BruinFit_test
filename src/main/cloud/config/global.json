@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "BruinFit": {
+      "applicationId": "KQSKXYSay5RZQF0lDhzJjB8srFghEDY7jxSu10r9",
+      "masterKey": "AZuELEKAwTYi1VM5WfPdu8eP1zYh9XimWvcZ40rZ"
+    },
+    "_default": {
+      "link": "BruinFit"
+    }
+  }
+}
