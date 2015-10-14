@@ -84,7 +84,7 @@ public class PickFoodTypeActivity extends AppCompatActivity {
         totalCalorie.setText("Total Calorie : " + String.valueOf(iTotalCalorie));
         eatenCalorie.setText("Eaten Calorie : " + String.valueOf(iEatenCalorie));
         totalFat.setText("Fat Goal : " + String.valueOf(Math.round(iTotalFat)));
-        eatenFat.setText("Eaten Fat: " + String.valueOf(Math.round(iEatenFat)));
+        eatenFat.setText("Eaten Fat: " + String.valueOf(iEatenFat));
         //listview intialization
         ArrayList<Meal> meals = ((BruinFit) getApplication()).getMeal().getMeals();
         //custom adapter
@@ -113,12 +113,14 @@ public class PickFoodTypeActivity extends AppCompatActivity {
 
                     TextView totalCalorie = (TextView) findViewById(R.id.totalCalorie);
                     TextView eatenCalorie = (TextView) findViewById(R.id.eatenCalorie);
+                    TextView eatenFat = (TextView) findViewById(R.id.eatenFat);
 
                     int iTotalCalorie= ((BruinFit) getApplication()).getUser().getTarget(UserProfile.DAILY).calorie;
                     int iEatenCalorie= ((BruinFit) getApplication()).getMeal().getTotalNutrients().calorie;
-
+                    double dEatenFat = ((BruinFit) getApplication()).getMeal().getTotalNutrients().totalFat;
                     totalCalorie.setText("Total Calorie : " + String.valueOf(iTotalCalorie));
                     eatenCalorie.setText("Eaten Calorie : " + String.valueOf(iEatenCalorie));
+                    eatenFat.setText("Eaten Fat : " + String.valueOf(Math.round(dEatenFat)));
                     //refresh the listview
                     adapter.notifyDataSetChanged();
                 }
