@@ -83,16 +83,19 @@ public class PickFoodTypeActivity extends AppCompatActivity {
 
         totalCalorie.setText("Total Calorie : " + String.valueOf(iTotalCalorie));
         eatenCalorie.setText("Eaten Calorie : " + String.valueOf(iEatenCalorie));
-        totalFat.setText("Fat Goal : " + String.valueOf(iTotalFat));
-        eatenFat.setText("Eaten Fat: " + String.valueOf(iEatenFat));
+        totalFat.setText("Fat Goal : " + String.valueOf(Math.round(iTotalFat)));
+        eatenFat.setText("Eaten Fat: " + String.valueOf(Math.round(iEatenFat)));
         //listview intialization
         ArrayList<Meal> meals = ((BruinFit) getApplication()).getMeal().getMeals();
         //custom adapter
         final MealAdapter adapter = new MealAdapter(this, meals);
 
         ListView listView = (ListView)findViewById(R.id.listview);
+        //display listview
         listView.setAdapter(adapter);
 
+        //set onitemclick listener to handle user inputs
+        //when a user clicks on a valid item, it counts as eaten.
         listView.setOnItemClickListener(new OnItemClickListener(){
             //when item is clicked do this.
             @Override
@@ -116,7 +119,7 @@ public class PickFoodTypeActivity extends AppCompatActivity {
 
                     totalCalorie.setText("Total Calorie : " + String.valueOf(iTotalCalorie));
                     eatenCalorie.setText("Eaten Calorie : " + String.valueOf(iEatenCalorie));
-
+                    //refresh the listview
                     adapter.notifyDataSetChanged();
                 }
                 else{

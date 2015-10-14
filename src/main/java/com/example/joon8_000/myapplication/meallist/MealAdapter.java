@@ -12,6 +12,7 @@ import com.example.joon8_000.myapplication.R;
 
 import java.util.ArrayList;
 
+//converts list of meals to be able to displayed in listview
 public class MealAdapter extends ArrayAdapter<Meal> {
     public MealAdapter(Context context, ArrayList<Meal> meals){
         super(context,0, meals);
@@ -30,7 +31,7 @@ public class MealAdapter extends ArrayAdapter<Meal> {
         mealName.setText(meal.getName());
         calorie.setText("Calorie" + String.valueOf(meal.getCalorie()));
         fat.setText("Fat" + String.valueOf(meal.getFat()));
-        //set color to white if you can eat, if not to gray.
+        //set color to white if you can eat, if not, to gray.
         if (meal.getCanEat()) {
             convertView.setBackgroundColor(Color.WHITE);
         }
